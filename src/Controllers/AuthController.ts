@@ -1,11 +1,11 @@
 import { Request, Response } from "express"
-import { STATUS_CODE } from "../Helpers/Constants"
+import { STATUS_CODE, STATUS_MESSAGE } from "../Helpers/Constants"
 
 export const Register = async (req: Request, res: Response) => {
     try {
         return res.status(200).json({
             status: true,
-            message: "Successfully registered account",
+            message: STATUS_MESSAGE.REGISTERED_SUCCESS,
             data: null
         })
     } catch (error) {

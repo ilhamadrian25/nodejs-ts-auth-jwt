@@ -13,10 +13,9 @@ exports.Register = void 0;
 const Constants_1 = require("../Helpers/Constants");
 const Register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        throw new Error("should have");
         return res.status(200).json({
             status: true,
-            message: "Successfully registered account",
+            message: Constants_1.STATUS_MESSAGE.REGISTERED_SUCCESS,
             data: null
         });
     }
